@@ -63,41 +63,6 @@ Follow these steps to install and run the project:
    - Go to `Appearance > Themes`.
    - Activate the `oceanwp-child` theme.
 
-## Docker Compose Configuration
-
-The `docker-compose.yml` file is configured as follows:
-
-```yaml
-services:
-  wordpress:
-    image: wordpress
-    restart: always
-    ports:
-      - 8080:80
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: meshkiplii
-      WORDPRESS_DB_PASSWORD: kiplimo96
-      WORDPRESS_DB_NAME: oceanwp
-    volumes:
-      - ./themes:/var/www/html/wp-content/themes
-
-  db:
-    image: mysql:8.0
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: kiplimo96
-      MYSQL_DATABASE: oceanwp
-      MYSQL_USER: meshkiplii
-      MYSQL_PASSWORD: kiplimo96
-    volumes:
-      - db:/var/lib/mysql
-
-volumes:
-  wordpress:
-  db:
-```
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
