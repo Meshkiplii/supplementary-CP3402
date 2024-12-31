@@ -1,3 +1,48 @@
+/* Header Styling */
 #site-header.medium-header .top-header-wrap {
   background-color: blue !important;
+  padding: 20px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Footer Styling */
+#site-footer {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Content Styling */
+#main-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Additional Styling for Content */
+#main-content h1,
+#main-content h2,
+#main-content h3 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+#main-content p {
+  margin-bottom: 15px;
+}
+
+#main-content a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+#main-content a:hover {
+  text-decoration: underline;
 }
